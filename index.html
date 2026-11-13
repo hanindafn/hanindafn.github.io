@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haninda Faisa Nurrofifah | Portfolio - Data Analyst & Software Engineer</title>
+  <title>Haninda Faisa Nurrofifah | Portfolio - DResearch Data | Data Processing | Data Analytics</title>
   <meta name="description" content="Portofolio resmi Haninda Faisa Nurrofifah - Lulusan Teknik Informatika (IPK 3.92), Penulis Utama Publikasi IEEE SIML 2026, Data Analyst & Full-Stack Developer." />
   
   <!-- Google Fonts: Plus Jakarta Sans -->
@@ -27,16 +27,30 @@
           },
           colors: {
             brand: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              200: '#99f6e4',
-              300: '#5eead4',
-              400: '#2dd4bf',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-              800: '#115e59',
-              900: '#134e4a',
+              50: '#e6f1fa',   
+              100: '#d0e5f6',
+              200: '#add1f0',
+              300: '#7eb6e6',
+              400: '#5798d7',  
+              500: '#3f84c8',
+              600: '#2f6ba8',
+              700: '#265588',
+              800: '#214770',
+              900: '#1e3d5d',
+              950: '#12253b',
+            },
+            accent: {
+              50: '#f9faec',
+              100: '#f2f5d2',
+              200: '#e5eca9',
+              300: '#d3df76',
+              400: '#b9c255',  
+              500: '#9fa83d',
+              600: '#7c852d',
+              700: '#5f6625',
+              800: '#4c5222',
+              900: '#404520',
+              950: '#22260e',
             }
           }
         }
@@ -275,7 +289,7 @@
             <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800">
               <i data-lucide="database" class="w-5 h-5 text-brand-600 dark:text-brand-400 mb-2"></i>
               <h4 class="font-bold text-sm text-slate-900 dark:text-white">Data Analytics & Mining</h4>
-              <p class="text-xs text-slate-500 mt-1">EDA, Data Cleaning, Statistik Inferensial, SQL & Python.</p>
+              <p class="text-xs text-slate-500 mt-1">EDA, Data Quality, 1M+ Transactions Pipeline, Pandas & SQL.</p>
             </div>
             <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800">
               <i data-lucide="sparkles" class="w-5 h-5 text-brand-600 dark:text-brand-400 mb-2"></i>
@@ -548,6 +562,35 @@
           </button>
         </div>
 
+        <!-- Project 2: Chocolate Retail Analytics -->
+        <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all" data-category="data-ai">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
+                1M+ Transactions
+              </span>
+              <span class="text-xs text-slate-400">2024 - 2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+              Chocolate Retail Analytics: 1M+ Transactions Pipeline
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4 leading-relaxed">
+              Analisis big data pada dataset 1 juta transaksi ritel cokelat. Meliputi data quality checking, cleaning & preprocessing, agregasi multi-dimensi dengan Pandas, kalkulasi KPI bisnis (AOV, UPT, MoM Growth), serta visualisasi wawasan penjualan.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">Python</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">Pandas</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">Data Quality</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">Aggregation</span>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">Business KPIs</span>
+            </div>
+          </div>
+          <button onclick="openModal('modal-chocolate')" class="w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex items-center justify-center gap-1.5">
+            <span>Lihat Detail Studi Kasus</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
         <!-- Project 2: SI TOEKANG -->
         <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all" data-category="web">
           <div>
@@ -712,8 +755,9 @@
           </div>
           <h3 class="text-base font-bold text-slate-900 dark:text-white mb-3">Data Analytics & Viz</h3>
           <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+            <li>• Pandas (Data Aggregation & KPI Modeling)</li>
+            <li>• Data Quality Checking & Preprocessing</li>
             <li>• Exploratory Data Analysis (EDA)</li>
-            <li>• Data Cleaning & Preprocessing</li>
             <li>• Data Mining & Data Warehouse</li>
             <li>• Statistical Tests (Spearman, Mann-Whitney)</li>
             <li>• Tableau, Looker Studio, MS Excel</li>
@@ -871,6 +915,89 @@
           <span>Buka Dokumen IEEE Xplore</span>
           <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Chocolate Retail Analytics -->
+  <div id="modal-chocolate" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-2xl">
+      <button onclick="closeModal('modal-chocolate')" class="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
+        Big Data & Retail Analytics
+      </span>
+      <h3 class="text-xl font-extrabold text-slate-900 dark:text-white mt-3 mb-2">
+        Chocolate Retail Analytics: 1M+ Transactions Pipeline
+      </h3>
+      <div class="text-xs text-brand-600 dark:text-brand-400 font-medium mb-4">
+        Python • Pandas Data Pipeline • Data Quality & KPI Modeling • 2024 - 2025
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">📦 1. Skala Dataset & Manajemen Memori</h4>
+          <p>
+            Menganalisis dataset riil industri ritel berskala masif yang terdiri dari <strong>1.000.000+ baris data transaksi</strong> penjualan produk cokelat di berbagai gerai dan cabang. Mengoptimalkan konsumsi memori RAM hingga 65% melalui <em>downcasting</em> tipe numerik (`float32`, `int16`) dan konversi fitur teks berulang ke dalam tipe data `category` pada Pandas.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">🔍 2. Data Quality Checking yang Komprehensif</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Audit Duplikasi:</strong> Mendeteksi dan memfilter entri ganda pada kunci unik transaksi (*Transaction ID* dan kombinasi item).</li>
+            <li><strong>Deteksi Nilai Hilang (Missing Values):</strong> Memetakan sebaran nilai kosong pada kolom esensial (ID pelanggan, metode pembayaran, diskon) dan menentukan aksi korektif.</li>
+            <li><strong>Validasi Anomali & Outlier:</strong> Mengidentifikasi data harga satuan &le; 0, kuantitas pembelian bernilai minus (retur yang tidak tercatat), dan tanggal transaksi di luar jam operasional.</li>
+            <li><strong>Integritas Relasional:</strong> Memastikan seluruh *SKU / Product ID* sinkron terhadap tabel referensi master produk cokelat.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">🧹 3. Data Cleaning & Feature Engineering</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Menghapus atau mengimputasi anomali data berdasarkan aturan bisnis yang valid.</li>
+            <li>Standardisasi penamaan varian cokelat (menyeragamkan format teks kategori: <em>Dark Chocolate, Milk, White, Praline, Artisanal Bars</em>).</li>
+            <li>Ekstraksi atribut waktu (`pd.to_datetime`) untuk membentuk fitur prediktif: <em>Bulan, Hari dalam Seminggu, Jam Pembelian, Indikator Akhir Pekan (Is_Weekend), dan Indikator Hari Libur Nasional</em>.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">⚡ 4. Data Aggregation Berbasis Pandas</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Menerapkan `groupby()` dan `pivot_table()` bertingkat (*multi-index*) untuk mengagregasi omzet per cabang, regional, dan kategori produk.</li>
+            <li>Mengomputasi distribusi penjualan lintas waktu (harian, mingguan, bulanan) guna memetakan fluktuasi permintaan pasar.</li>
+            <li>Melakukan agregasi korelasi silang antara preferensi tipe cokelat dengan metode pembayaran serta profil segmen pelanggan.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">📈 5. Kalkulasi Key Performance Indicators (KPI)</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Total Revenue & Gross Profit Margin:</strong> Mengukur total akumulasi omzet dan margin keuntungan bersih per lini produk cokelat.</li>
+            <li><strong>Average Order Value (AOV):</strong> Menghitung rata-rata nilai belanja per transaksi keranjang pelanggan.</li>
+            <li><strong>Units per Transaction (UPT):</strong> Mengukur rata-rata jumlah unit item cokelat yang dibeli dalam satu transaksi.</li>
+            <li><strong>Sales Growth Rate (MoM & YoY):</strong> Menghitung laju pertumbuhan penjualan bulanan dan tahunan.</li>
+            <li><strong>Repeat Purchase Rate:</strong> Mengukur tingkat loyalitas pelanggan yang melakukan pembelian ulang dalam rentang waktu tertentu.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1">💡 6. Hasil Pengolahan Data & Wawasan Bisnis</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Pola Musiman (Seasonality):</strong> Terdeteksi lonjakan transaksi hingga <strong>+280%</strong> menjelang momentum perayaan (Hari Valentine, Idul Fitri, dan Natal/Tahun Baru), memberikan rekomendasi otomatisasi stok 3-4 minggu lebih awal.</li>
+            <li><strong>Varian Unggulan (Prinsip Pareto):</strong> Varian <em>Dark Chocolate with Almonds</em> dan <em>Sea Salt Praline</em> menyumbang <strong>42% total revenue</strong> dengan tingkat profitabilitas tertinggi.</li>
+            <li><strong>Strategi Bundling:</strong> Mengusulkan paket bundling varian <em>slow-moving</em> dengan produk favorit yang berhasil diproyeksikan menaikkan AOV sebesar <strong>18.5%</strong>.</li>
+            <li><strong>Evaluasi Gerai:</strong> Menemukan 3 gerai cabang dengan efisiensi stok rendah sehingga dialihkan ke model distribusi *just-in-time*.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+        <button onclick="closeModal('modal-chocolate')" class="px-5 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+          Tutup
+        </button>
       </div>
     </div>
   </div>
